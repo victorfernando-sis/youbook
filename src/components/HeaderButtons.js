@@ -1,12 +1,14 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
-import { Feather } from '@expo/vector-icons';
+import { Feather,FontAwesome } from '@expo/vector-icons';
 
 export const HeaderButtons = (navigation) => {
     return (
         <View style={styles.buttonsStyle}>
-            <Feather name="search" size={24} color="black" style={styles.iconStyle}
+            <Feather name="youtube" size={24} color="black" style={styles.iconStyle}
                 onPress={() => { navigation.navigate('Search') }} />
+            <Feather name="search" size={24} color="black" style={styles.iconStyle}
+                onPress={() => { navigation.navigate('Account') }} />
             <Feather name="user" size={24} color="black" style={styles.iconStyle}
                 onPress={() => { navigation.navigate('Account') }} />
         </View>

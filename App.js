@@ -11,7 +11,7 @@ import MyLibraryScreen from './src/screens/MyLibraryScreen';
 import AccountScreen from './src/screens/AccountScreen';
 import PlayScreen from './src/screens/PlayScreen';
 import { HeaderButtons, HeaderTitle } from './src/components/HeaderButtons';
-import { Provider as VideoBookProvider } from './src/context/VideoBookContext';
+import { Provider as YotubeApiProvider } from './src/context/YoutubeApiContext';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -59,8 +59,8 @@ const App = () => {
 
 export default () => {
   return (
-    <VideoBookProvider>
+    <YotubeApiProvider>
       <App />
-     </VideoBookProvider>
+     </YotubeApiProvider>
   )
 }
