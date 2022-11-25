@@ -6,6 +6,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+:root {
+
+  --clr-primary: #075742;
+  --fs-body: 1rem;
+  --fs-small: 0.8rem;
+
+  color: var(--clr-primary);
+  font-size: var(--fs-body);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -19,8 +29,77 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+}
+
+nav {
+  padding: 0 1em;
+  border: 1px solid #b4b4b40b;
+  /* border-bottom: 1px solid #b4b4b40b; */
+  box-shadow: 0 0px 0px 0px rgba(240, 240, 240, 0.2), 0 1px 5px 0 rgba(129, 129, 129, 0.19);
+
+}
+
+img {
+  width: 100%;
+}
+
+/* Typography */
+
+/* Layout */
+.card-slider-title {
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-slider-container {
+  padding: 0 1em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.card-container {
+  display: inline-block;
+  width: 250px;
+  max-height: 250px;
+  margin-right: .5em;
+  margin-bottom: 1em;
+  border-radius: .5em;
+  overflow: hidden;
+  box-shadow: 0 1px 1px 0 rgba(45, 34, 203, 0.2), 0 6px 20px 0 rgba(183, 172, 172, 0.19);
+
+}
+
+.channel-thumbnail {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: .5em;
+}
+
+.card-title-section {
+  display: flex;
+}
+
+.card-title {
+  margin-bottom: 0
+}
+
+.card-info-section {
+  display: flex;
+  font-size: var(--fs-small);
+}
+
+.card-info-section p {
+  margin: 0 5px 10px 5px;
+
 }
