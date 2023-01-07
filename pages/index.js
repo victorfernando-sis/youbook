@@ -1,6 +1,8 @@
 import React from 'react'
 import CardSlider from '../components/CardSlider'
 import { useYoutubeContext } from '../context/YoutubeContext'
+import Link from 'next/link'
+
 
 const App = () => {
   const data = useYoutubeContext()

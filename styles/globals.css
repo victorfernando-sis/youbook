@@ -112,3 +112,13 @@ img {
   margin: 0 5px 10px 5px;
 
 }
+
+
+.video-controls{
+  font-size: 3em;
+  width: 30%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

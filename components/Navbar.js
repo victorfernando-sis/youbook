@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
         <nav className='navbar'>
-            <h2 className='logo'>Youbook</h2>
+            <Link href='/'><h2 className='logo'>Youbook</h2></Link>
         </nav>
     )
 }
