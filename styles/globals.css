@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -59,7 +64,7 @@ img {
 }
 
 .card-slider-container {
-  padding: 0 1em;
+  padding-left: .5em;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -71,12 +76,16 @@ img {
   display: inline-block;
   width: 250px;
   max-height: 250px;
-  margin-right: .5em;
-  margin-bottom: 1em;
+  margin: .5em .5em;
   border-radius: .5em;
   overflow: hidden;
   box-shadow: 0 1px 1px 0 rgba(45, 34, 203, 0.2), 0 6px 20px 0 rgba(183, 172, 172, 0.19);
+  transition: 200ms;
+  cursor: pointer;
+}
 
+.card-container:hover {
+  transform: scale(1.02);
 }
 
 .channel-thumbnail {

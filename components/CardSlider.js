@@ -1,7 +1,11 @@
 import React from 'react'
 import Card from './Card'
 
-const CardSlider = ({ title }) => {
+
+const CardSlider = ({ title, data }) => {
+
+    // const {data, error} = useSWR(' /api/youtube.js', fetcher)
+    console.log('Card',data)
     return (
         <>
             <div className='card-slider-title'>
@@ -9,8 +13,9 @@ const CardSlider = ({ title }) => {
                 <a href='#'>See more</a>
             </div>
             <div className='card-slider-container'>
-                <Card />
-                <Card />
+                {data?.map(video => {
+                    return <Card key={video.id.videoId} data={video.snippet} />
+                })}
             </div>
         </>
     )

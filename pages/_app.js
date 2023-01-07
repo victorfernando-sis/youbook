@@ -1,11 +1,14 @@
 import Layout from '../components/Layout'
+import { YoutubeContext } from '../context/YoutubeContext'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <YoutubeContext>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </YoutubeContext>
   )
 }
 
